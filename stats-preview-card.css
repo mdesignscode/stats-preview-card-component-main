@@ -1,0 +1,274 @@
+/* ************ Global element styling ************** */
+* {
+    /* ************* Master reset ************* */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-family: inherit;
+    color: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    background-color: #090b1a;
+    color: white;
+    overflow-x: hidden;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/*  ************ Main styling **************  */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vmax auto;
+}
+
+@media (min-width: 768px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card .hero-image-mobile {
+        display: none;
+    }
+
+    .card .main-content {
+        width: 25em;
+        height: 22em;
+        border-radius: 0.6rem 0 0 0.6rem;
+        font-size: 100%;
+        text-align: left;
+    }
+
+    .card header {
+        margin: 1rem 1rem 1rem 1.4rem;
+    }
+
+    .card .main-paragraph {
+        margin: 1rem 4rem 0 1.4rem;
+        color: rgba(255, 255, 255, 0.75);
+        line-height: 1.5;
+    }
+
+    .card .statistics {
+        display: flex;
+        justify-content: start;
+        margin: 0 0 0 1.4rem;
+    }
+
+    .card .statistics .stat-heading {
+        font-size: 0.55rem !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card .statistics .stats {
+        margin-right: 2rem;
+        margin-top: 0.6rem;
+    }
+
+    .card .hero-image-desktop {
+        background-color: #aa5cdb;
+        background-image: url("https://assets.codepen.io/4325932/image-header-desktop.jpg");
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        width: 23em;
+        height: 22em;
+        border-radius: 0 0.6rem 0.6rem 0;
+    }
+
+    .card h1 {
+        font-size: 1.6em !important;
+    }
+
+    .card h2 {
+        font-size: 1.2em !important;
+    }
+
+    .card p {
+        font-size: 0.75rem !important;
+        line-height: 1.7 !important;
+    }
+
+    .card .stat-heading {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card .hero-image-mobile {
+        display: none;
+    }
+
+    .card h1 {
+        font-size: 2.4em !important;
+    }
+
+    .card h2 {
+        font-size: 1.25em !important;
+    }
+
+    .card p {
+        font-size: 0.9rem !important;
+    }
+
+    .card .main-content {
+        width: 35rem;
+        height: 27em;
+        border-radius: 0.6rem 0 0 0.6rem;
+        font-size: 100%;
+        text-align: left;
+    }
+
+    .card header {
+        margin: 2rem 4rem 1.7rem 2rem;
+    }
+
+    .card .main-paragraph {
+        margin: 0 5rem 0 2rem;
+    }
+
+    .card .statistics {
+        display: flex;
+        justify-content: start;
+        margin-left: 2rem;
+        margin-top: 4.5rem;
+    }
+
+    .card .statistics .stat-heading {
+        font-size: 0.7rem !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card .statistics .stats {
+        margin-right: 4rem;
+    }
+
+    .card .hero-image-desktop {
+        background-color: #aa5cdb;
+        background-image: url("https://assets.codepen.io/4325932/image-header-desktop.jpg");
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        width: 34rem;
+        height: 27em;
+        border-radius: 0 0.6rem 0.6rem 0;
+    }
+
+    .card .main-paragraph {
+        color: rgba(255, 255, 255, 0.75);
+        line-height: 1.5;
+    }
+
+    .card .stat-heading {
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.75em;
+    }
+}
+
+/*  ************ Card styling **************  */
+.main-content {
+    justify-content: space-between;
+    background: #1b1938;
+    text-align: center;
+    width: 20em;
+    height: 35em;
+    padding: 1.5rem 2.1rem;
+    border-radius: 0 0 0.6rem 0.6rem;
+}
+
+.main-content h1 {
+    font-size: 1.9em;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.2;
+    margin-top: 0.5em;
+}
+
+.main-content h2 {
+    font-size: 1.2em;
+}
+
+.main-content .main-paragraph {
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.5;
+    margin-top: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.main-content .stat-heading {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75em;
+    margin-top: 0.3rem;
+    margin-bottom: 1.6rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*  ************ Hero styling **************  */
+.hero-image-mobile {
+    background-image: url("https://assets.codepen.io/4325932/image-header-mobile.jpg");
+    background-color: #aa5cdb;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
+    width: 20em;
+    height: 16em;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    margin: 1rem auto;
+    font-size: 1rem;
+}
+
+.attribution a {
+    color: #aa5cdb;
+    margin: 0 0.2rem 0 0.5rem;
+}
+
+.attribution a:hover {
+    transform: rotate(4deg) scale(1.1);
+    text-shadow: #202027 0.5rem 0.6rem 0.5rem;
+}
+
+
+
+/*# sourceMappingURL=stats-preview-card.css.map */
